@@ -88,13 +88,13 @@ p strong {
         padding-top: 150px;
     }
 
-    header .avatar {
+   /* header .avatar {
         display: block;
         border-radius: 50%;
         width: 120px;
         height: 120px;
         margin: 0 auto;
-    }
+    }*/
 
     header h2 {
         color: #fff;
