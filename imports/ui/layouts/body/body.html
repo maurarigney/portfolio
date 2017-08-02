@@ -1,33 +1,36 @@
 <template name="App_body">
   {{> Template.dynamic template=main}}
 
-  <header id="top">
-        <a href = "#" class = "email-button"> Login </a>
-        <a href = "#" class = "email-button"> Subscribe </a>
-        <div class="ryan">
-           <!--  <img class="avatar" src="img/avatar.jpg" alt="Maura" /> -->
-            <h2>Maura Rigney<span>Graphic Design | Advertising</span></h2>
-            <div class="social">
-                <a class="linkedin" href="http://linkedin.com/in/maura-rigney" data-username="10998304">LinkedIn</a>
-                <a class="github" href="http://github.com/maurarigney">Github</a>
-                <a class="email" href="maura.rigney@colorado.edu">Email me</a>
+    <header>
+        <div class = 'row' style='border: 1px solid black; height: 100px;'>
+            <div class = 'col-md-1'>
+                <a href = "#" class = "email-button"> Login </a>
+            </div>
+
+            <div class = 'col-md-1'>
+                <a href = "#" class = "email-button"> Subscribe </a>
+            </div>
+
+            <div class = 'col-md-3'>
+
+                <div class="social">
+                    <a class="linkedin" href="http://linkedin.com/in/maurarigney" data-username="10998304">LinkedIn</a>
+                    <a class="github" href="http://github.com/nickmflorin">Github</a>
+                    <a class="email" href="mailto:test.com">Email me</a>
+                </div>
+
+            </div>
+
+            <div class = 'col-md-7'>
+                <h2>Maura Rigney<span>Graphic Design, Marketing, Advertising</span></h2>
             </div>
         </div>
-
     </header>
 
-    <div style='color:white'>
+    <div class = 'row' style='margin-top: 100px;'>
+     {{> grid}}
+    </div>
   
-   <div class="container-fluid"> 
-    <div class ="row">
-        <div class = 'col-sm-4' style="background-color: lavender;">.col-sm-4
-        </div>
-        <div class = "col-sm-4" style="background-color: lavenderblush;">.col-sm-4
-        </div>
-        <div class = "col-sm-4" style="background-color: lavender;">.col-sm-4
-        </div>
-    </div>
-    </div>
-    </div>
 
+    
 </template>

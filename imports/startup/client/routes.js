@@ -5,8 +5,9 @@ import { BlazeLayout } from 'meteor/kadira:blaze-layout';
 import '../../ui/layouts/body/body.js';
 import '../../ui/pages/home/home.js';
 import '../../ui/pages/not-found/not-found.js';
-import 'bootstrap/dist/js/bootstrap.js'
-import 'bootstrap/dist/css/bootstrap.min.css'
+
+import '../../../node_modules/bootstrap/dist/js/bootstrap.js'
+import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
 // Set up all routes in the app
 FlowRouter.route('/', {

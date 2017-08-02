@@ -1,15 +1,4 @@
 /*------------------ @reset ------------------*/
-body,html { margin:0; padding: 0; width: 100%; /*height:100%;*/ }
-body,h1,h2,h3,h4,h5,h6,pre,code { font-size: 1em; }
-ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,legend,
-input,button,select,textarea,dl,dd,dt,hr,table,thead,tbody,tfoot,tr,th,td
-{ margin:0; padding:0 }
-img,a img,:link img,:visited img { border:0;padding:0;margin:0; }
-address,cite,caption { font-style: normal }
-caption,th { text-align: left }
-ol,ul { margin:0; margin-left: 25px; }
-a,button { outline: 0; }
-input[type="submit"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner, button::-moz-focus-inner { border: 0px; }
 
 @font-face{
     font-family:ProximaNovaLight;
@@ -44,10 +33,32 @@ input[type="submit"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner, 
     color:#fff;
 }
 
+/* ================================================
+  Colors
+================================================ */
+:root {
+
+    --lavender: rgba(230, 230, 250, 1);
+    --lavenderblush: rgba(255, 242, 246, 1);
+    --gray: rgba(191, 191, 191, 1);
+    --brown: rgba(150, 147, 155, 1);
+    --red: rgba(204, 191, 201, 1);
+
+    --color1: rgba(230, 230, 250, 0.8);
+    --color2: rgba(255, 242, 246, 0.8);
+    --color3: rgba(191, 191, 191, 0.8);
+    --color4: rgba(150, 147, 155, 0.8);
+    --color5: rgba(204, 191, 201, 0.8);
+
+}
+
+*:focus {
+    outline:none;
+}
+
 /*------------------ @body ------------------*/
 body {
-    /* twofishillustration.com created this header. Isn't it dope? */
-    background: #f4f3f3 url(img/cover.jpg) repeat-x center top fixed;
+    /*background: #f4f3f3 url(img/cover.jpg) repeat-x center top fixed;*/
     color: #444948;
     font: normal 16px/24px "ProximaNovaLight", "Helvetica Neue", Helvetica, sans-serif;
 }
@@ -97,7 +108,7 @@ p strong {
     }*/
 
     header h2 {
-        color: #fff;
+        color: var(--gray);
         text-align: center;
         display: block;
         font-size: 3em;
@@ -110,7 +121,7 @@ p strong {
         font-size: 14px;
         padding-top: 15px;
         font-weight: normal;
-        color: rgba(255,255,255,0.8);
+        color: var(--gray);
         font-family: ProximaNovaLight;
         letter-spacing: 0.15em;
         text-transform: uppercase;
@@ -136,9 +147,9 @@ p strong {
             -webkit-transition: all .2s ease-in-out; /* For Safari 3.1 to 6.0 */
         transition: all .2s ease-in-out;
         }
-            header .social a.linkedin { background-image: url(img/linkedin.png); }
-            header .social a.email    { background-image: url(img/email.png); }
-            header .social a.github   { background-image: url(img/github.png); }
+            header .social a.linkedin { background-image: url(img/linkedin.png); background-color: black;}
+            header .social a.email    { background-image: url(img/email.png); background-color: black;}
+            header .social a.github   { background-image: url(img/github.png); background-color: black;}
 
 #top {
     position: fixed;
@@ -151,28 +162,6 @@ p strong {
     left: 20px;
     width: 20px;
 }
-
-.skills {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    height: 60px;
-    display: none;
-}
-    .skills li {
-        border-top-style: solid;
-        display:inline-block;
-        width: 20%;
-        position: absolute;
-        bottom: 0;
-        text-align: center;
-    }
-    .skills li.html  { border-top-color: rgba(33,74,100, 1.0); border-top-width: 10px; }
-    .skills li.scss  { border-top-color: rgba(33,74,100, 0.8); border-top-width: 10px; left: 20%; }
-    .skills li.js    { border-top-color: rgba(33,74,100, 0.6); border-top-width: 7px;  left: 40%; }
-    .skills li.rails { border-top-color: rgba(33,74,100, 0.4); border-top-width: 4px;  left: 60%; }
-    .skills li.ios   { border-top-color: rgba(33,74,100, 0.2); border-top-width: 4px;  left: 80%; }
 
 #container {
     margin: 526px auto 0 auto;
@@ -196,23 +185,23 @@ p strong {
     height: 50px;
 }
 
-    #container h2 span {
-        margin: 0;
-        display: block;
-        width: 780px;
-        margin: 0 auto;
-    }
+#container h2 span {
+    margin: 0;
+    display: block;
+    width: 780px;
+    margin: 0 auto;
+}
 
-    #container h2 span em {
-        border-bottom: 1px solid #444948;
-        font-style: normal;
-        display: inline-block;
-        padding: 20px 0;
-        height: 10px;
-    }
+#container h2 span em {
+    border-bottom: 1px solid #444948;
+    font-style: normal;
+    display: inline-block;
+    padding: 20px 0;
+    height: 10px;
+}
 
-        #container h2 span em.lefty { float: left; }
-        #container h2 span em.righty { float: left; margin-left: 380px; }
+#container h2 span em.lefty { float: left; }
+#container h2 span em.righty { float: left; margin-left: 380px; }
 
 .portfolio {
     width: 780px;
