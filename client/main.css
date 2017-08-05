@@ -72,60 +72,56 @@ p strong {
     font-family: ProximaNovaSemiBold;
 }
 
-    h1 {
-        margin: 0 auto;
-    }
+h1 {
+    margin: 0 auto;
+}
 
-    h1, h1 a {
-        width: 333px;
-        height: 242px;
-        display: block;
-    }
+h1, h1 a {
+    width: 333px;
+    height: 242px;
+    display: block;
+}
 
-        h1 a {
-            text-indent: -9999px;
-            background: url(img/logo.png) no-repeat 0 0;
-            border: 0;
-        }
+h1 a {
+    text-indent: -9999px;
+    background: url(img/logo.png) no-repeat 0 0;
+    border: 0;
+}
 
-    header {
-        height: 526px;
-        position: fixed;
-        top: 0;
-        width: 100%;
-    }
+header {
+    height: 110px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
 
-    header .ryan {
-        padding-top: 150px;
-    }
+header h2 {
+    color: var(--gray);
+    text-align: center;
+    display: block;
+    font-size: 2em;
+    line-height: 0.5em;
+    padding-top: 10px;
+    padding-left: 25px;
+    font-family: ProximaNovaLight;
+}
 
-   /* header .avatar {
-        display: block;
-        border-radius: 50%;
-        width: 120px;
-        height: 120px;
-        margin: 0 auto;
-    }*/
+header h3 {
+    display: block;
+    font-size: 14px;
+    padding-top: 5px;
+    font-weight: normal;
+    padding-left: 25px;
+    color: var(--black);
+    font-family: ProximaNovaLight !important;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
 
-    header h2 {
-        color: var(--gray);
-        text-align: center;
-        display: block;
-        font-size: 3em;
-        line-height: 1em;
-        padding-top: 20px;
-    }
-
-    header h2 span {
-        display: block;
-        font-size: 14px;
-        padding-top: 15px;
-        font-weight: normal;
-        color: var(--gray);
-        font-family: ProximaNovaLight;
-        letter-spacing: 0.15em;
-        text-transform: uppercase;
-    }
+header .social a.linkedin { background-image: url(img/linkedin.png); background-color: gray; opacity: 0.9;}
+header .social a.email    { background-image: url(img/email.png); background-color: gray; opacity: 0.9;}
+header .social a.github   { background-image: url(img/github.png); background-color: gray; opacity: 0.9;}
 
     header .social {
         text-align: center;
@@ -147,9 +143,7 @@ p strong {
             -webkit-transition: all .2s ease-in-out; /* For Safari 3.1 to 6.0 */
         transition: all .2s ease-in-out;
         }
-            header .social a.linkedin { background-image: url(img/linkedin.png); background-color: black;}
-            header .social a.email    { background-image: url(img/email.png); background-color: black;}
-            header .social a.github   { background-image: url(img/github.png); background-color: black;}
+            
 
 #top {
     position: fixed;
